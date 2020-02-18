@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest Recipe</title>
+
+</head>
+    <h1> The Lazy Chef </h1>
+    <p>Simple recipes to spend more time eating and less time cooking.<p>
+
+    <main>
+        <h2>Suggest A Recipe</h2>
+        <p>If you would like your recipe to be featured on The Lazy Chef fill out the form and we will get back to you as soon as possible. Thanks!</p>
+        <form action="results_script.py" method="POST">
+            <div>
+                <label for="Chef's_Name">Chef's name</label><br>
+                <input type="text" name="Chef's Name" id="Chef's_Name" placeholder="Full name" size=50>
+            </div>
+            <div>
+                <label for="email_field">Email</label><br>
+                <input type="email" name="Email" id="email_field" placeholder="Chef's Email">
+            </div>
+            <div>
+                <label for="Recipe_title">Recipe title</label><br>
+                <input type="text" name="Recipe title" id="Recipe_title" placeholder="Short Recipe title" size=50>
+            </div>
+            <div>
+                <label for="Instructions">Instructions</label><br>
+                <textarea name="Instructions" id="Instructions" placeholder="Provide detailed instructions" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Recipe Difficulty</label><br>
+                <input type="radio" name="Difficulty" value="Easy" id="Easy">
+                <label for="Easy">Easy</label>
+                <input type="radio" name="Difficulty" value="Medium" id="Medium" checked>
+                <label for="Medium">Medium</label>
+                <input type="radio" name="Difficulty" value="Hard" id="Hard">
+                <label for="Hard">Hard</label>
+            </div>
+            <div>
+                <label for="Food_category">Food Category</label><br>
+                <select name="Food_category" id="Food_category">
+                    <option value="" selected>---</option>
+                    <option value="breakfest">Breakfest</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit Recipe">
+            <input type="reset" value="Cancel"> 
+            </form>
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>
+    </main>
+</body>
+</html>
